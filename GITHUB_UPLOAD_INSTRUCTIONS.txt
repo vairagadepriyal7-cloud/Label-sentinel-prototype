@@ -1,0 +1,72 @@
+================================================================================
+LABEL SENTINEL — GITHUB REPOSITORY UPLOAD INSTRUCTIONS
+Domain: Legal Metrology & Regulatory Compliance Technology
+Milestone: Week 2 — Front-End Application Development
+================================================================================
+
+PREREQUISITES:
+1. Ensure Git is installed: `git --version`
+2. Create a new EMPTY repository on your GitHub account (do NOT initialize with
+   README, .gitignore, or license, as these are already provided in the project).
+3. Have your repository URL ready:
+   e.g., https://github.com/<your-username>/<your-repo-name>.git
+
+IMPORTANT SECURITY & INTEGRITY CHECKS:
+- The project includes a verified .gitignore file protecting:
+  * node_modules/
+  * .next/
+  * .env, .env.local, and secrets
+  * build artifacts and temporary files
+  * *.zip submission archives
+  * WEEK2_FINAL_SUBMISSION/
+- Only source code, configurations, public assets, and documentation will be pushed.
+
+================================================================================
+STEP-BY-STEP POWERSHELL COMMANDS:
+================================================================================
+
+Open PowerShell, navigate to the project directory, and execute the following
+commands in sequence:
+
+# Step 1: Navigate to the project root
+cd "C:\Users\Acer\LABEL SENTINEL"
+
+# Step 2: Initialize local Git repository
+git init
+
+# Step 3: Stage all project files (governed by .gitignore)
+git add .
+
+# Step 4: Verify staged files (ensure no node_modules or .env files are staged)
+git status
+
+# Step 5: Create the initial commit
+git commit -m "feat: complete Label Sentinel Week 2 frontend with live scanning, OCR, and regulatory compliance rules"
+
+# Step 6: Rename default branch to main
+git branch -M main
+
+# Step 7: Connect your GitHub remote repository
+# Replace <your-username> and <your-repo-name> with your actual GitHub details:
+git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+
+# Step 8: Push your repository to GitHub
+git push -u origin main
+
+================================================================================
+VERIFICATION AFTER PUSH:
+================================================================================
+1. Visit your GitHub repository URL in your web browser.
+2. Confirm the repository tree displays:
+   - src/
+   - public/
+   - README.md
+   - WEEK2_FRONTEND_REPORT.md
+   - .env.example
+   - .gitignore
+   - package.json & package-lock.json
+   - next.config.mjs & tsconfig.json
+   - eng.traineddata & mar.traineddata
+3. Confirm node_modules/ and .next/ are NOT in the repository.
+================================================================================
+

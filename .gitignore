@@ -1,0 +1,54 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Testing & Coverage
+/coverage
+
+# Next.js build output
+/.next/
+/out/
+
+# Production build artifacts
+build
+dist
+*.tsbuildinfo
+
+# Misc
+.DS_Store
+*.pem
+
+# Local environment files
+.env*.local
+.env
+
+# Debug & logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Vercel & IDE
+.vercel
+.idea
+.vscode
+*.swp
+*.swo
+
+# Temporary directories
+scratch/
+scratch_dist/
+
+# Submission archives & artifacts
+*.zip
+WEEK2_FINAL_SUBMISSION/
+
+
+
+# Local env + temp test output
+.env
+.env.local
+.env.*.local
+.tmp-*
+/tmp
